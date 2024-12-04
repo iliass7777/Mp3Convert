@@ -5,7 +5,7 @@ def download_mp4(url, output):
     ydl_opts = {
         'ffmpeg_location': r'C:\Users\pc\Downloads\ffmpeg\bin',
         'format': 'bestvideo+bestaudio/best',  # Télécharge la meilleure qualité de vidéo et audio
-        'outtmpl': output,
+        'outtmpl': f"data/{output}",
         'merge_output_format': 'mp4',  # Force la sortie au format MP4
     }
     try:

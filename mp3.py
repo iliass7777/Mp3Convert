@@ -24,7 +24,7 @@ def mp3(url,output):
     ydl_opts = {
     'ffmpeg_location': r'C:\Users\pc\Downloads\ffmpeg\bin',
     'format': 'bestaudio/best',
-    'outtmpl': output,
+    'outtmpl': f"data/{output}",
     'postprocessors': [
         {
             'key': 'FFmpegExtractAudio',
